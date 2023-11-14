@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Conversor de Moedas</title>
+    <title>Conversor</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-   <div class="container">
-        <h1 class="titulo">Conversor de moedas</h1>
-        <div class="conv1">
-            <select name="conv1" id="conv1"></select>
-            <select name="conv2" id="conv2"></select>
+    <div class="container">
+        <h1>Conversor</h1>
+        <div class="currency-input">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" value="1000">
         </div>
-   </div>
-   <script type="text/javascript" src="./js/main.js"></script>
+        <div class="currency-options">
+            <label for="from">From:</label>
+            <select id="from">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="CHE">CHE</option>
+            </select>
+            <label for="to">To:</label>
+            <select id="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="CHE">CHE</option>
+            </select>
+        </div>
+        <div class="currency-result">
+            <p>Result:</p>
+            <p id="result">$0.00</p>
+        </div>
+        <button id="convert">Convert</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
