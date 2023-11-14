@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,21 @@
     <div class="container">
         <h1>Conversor</h1>
         <div class="currency-input">
-            <label for="amount">Amount:</label>
+            <label for="amount">Converter</label>
             <input type="number" id="amount" value="1000">
         </div>
         <div class="currency-options">
-            <label for="from">From:</label>
+            <label for="from">De:</label>
             <select id="from">
+                <option value="BRÇ">BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
                 <option value="CHE">CHE</option>
             </select>
-            <label for="to">To:</label>
+            <label for="to">Para:</label>
             <select id="to">
+                <option value="BRÇ">BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
@@ -30,10 +32,10 @@
             </select>
         </div>
         <div class="currency-result">
-            <p>Result:</p>
-            <p id="result">$0.00</p>
+            <p>Resultado:</p>
+            <p id="result">R$0.00</p>
         </div>
-        <button id="convert">Convert</button>
+        <button id="convert">Converta</button>
     </div>
     <script src="script.js"></script>
 </body>
