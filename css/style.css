@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background: #333333;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -62,3 +62,19 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+footer{    
+    align-self: end;
+    width: 100%;
+}
+
+
+.github {
+    width: fit-content;
+    font-size: 30px;
+    background: linear-gradient(to left, #E70FAA, #00BEFB);
+    background: -webkit-linear-gradient(to left, #E70FAA, #00BEFB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: #E70FAA, #00BEFB 2s infinite;
+  }
