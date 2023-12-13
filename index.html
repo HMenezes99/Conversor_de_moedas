@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor</title>
-    <link rel="stylesheet" href="./css/reset.css">
+
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="container">
+    <header>
         <h1>Conversor</h1>
-        <div class="currencyInput">
-            <label for="amount">Converter</label>
-            <input type="number" id="amount" value="1000">
-        </div>
-        <div class="currencyOptions">
-            <label for="from">De:</label>
+    </header>
+    <div class="container">
+
+        <div class="entry">
+            <input type="text" class="in">
             <select id="from">
                 <option value="BRL">BRL</option>
                 <option value="USD">USD</option>
@@ -23,26 +24,28 @@
                 <option value="GBP">GBP</option>
                 <option value="CHE">CHE</option>
             </select>
-            <label for="to">Para:</label>
+        </div>
+        <div class="converter"> 
+            <img class="imgSetas" src="./img/setas.png" width="25">
+        </div>
+        <div class="result">
+            <input type="text" class="for">
             <select id="to">
-                <option value="BRL">BRL</option>
+                <option value="BRL" >BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
                 <option value="CHE">CHE</option>
             </select>
         </div>
-        <div class="currencyResult">
-            <p>Resultado:</p>
-            <p id="result">R$0.00</p>
-        </div>
-        <button id="convert">Converta</button>
+        <div><img class="imgGrafico" src="./img/grafico.png" width="400"></div>
     </div>
-    <script src="script.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 <footer>
     <div class="waterMark">
         <h2 class="github">&lt;/HMenezes99&GT</h2>
     </div>
 </footer>
+
 </html>

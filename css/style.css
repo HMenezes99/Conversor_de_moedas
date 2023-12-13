@@ -1,15 +1,31 @@
 body {
+    display: flex;
     font-family: Arial, sans-serif;
     background: #333333;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-    width: 100%;
-    max-width: 500px;
+    display: flex;
+    width: 500px;
+    height: 300px;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+select#gender option[value="BRL"]{
+    background-image: url('../img/BRL.png') ;
+}
+
+select#gender option[value="BRL"] {
+    background-image: url('../img/BRL.png');
 }
 
 h1 {
@@ -20,34 +36,32 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-.input-section, .option-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+.entry{
+    
+    width: fit-content;
+    border: 1px solid black ;
+    border-radius: 5px;
 }
 
-.input-section label, .option-section label {
-    width: 100%;
-    max-width: 200px;
-    margin-bottom: 10px;
-}
 
-input[type="number"] {
-    width: 100%;
-    max-width: 200px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
 
-select {
-    width: 100%;
-    max-width: 200px;
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+.result{
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+input{
+    width: 100px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-radius: 5px;
+}
+select{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-radius: 0 5px 5px 0;
 }
 
 button {
@@ -78,4 +92,16 @@ footer{
     background: linear-gradient(to left, #E70FAA, #00BEFB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  #from{
+    border-left: black solid 0.5px;
+  }
+
+  #to{
+    border-left: black solid 0.5px;
+  }
+
+  .imgGrafico{
+    border: #333333;
   }
