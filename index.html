@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor</title>
-
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor</title>
+        
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="module" src="./js/chart.js"></script>
+    
 <body>
     <header>
         <h1>Conversor</h1>
@@ -17,30 +19,27 @@
 
         <div class="entry">
             <input type="text" class="in">
-            <select id="from">
+            <select id="from" >
                 <option value="BRL">BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
-                <option value="CHE">CHE</option>
             </select>
         </div>
-        <div class="converter"> 
+        <div class="converter">
             <img class="imgSetas" src="./img/setas.png" width="25">
         </div>
         <div class="result">
             <input type="text" class="for">
             <select id="to">
-                <option value="BRL" >BRL</option>
+                <option value="BRL">BRL</option>
                 <option value="USD">USD</option>
                 <option value="EUR">EUR</option>
                 <option value="GBP">GBP</option>
-                <option value="CHE">CHE</option>
             </select>
         </div>
-        <div><img class="imgGrafico" src="./img/grafico.png" width="400"></div>
+        <div><canvas style="width: 500px;" id="variationCoin"></canvas></div>
     </div>
-    <script src="./js/main.js"></script>
 </body>
 <footer>
     <div class="waterMark">
