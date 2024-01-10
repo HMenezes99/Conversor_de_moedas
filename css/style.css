@@ -20,20 +20,17 @@ body {
 
 }
 
-select#gender option[value="BRL"]{
-    background-image: url('../img/BRL.png') ;
-}
-
-select#gender option[value="BRL"] {
-    background-image: url('../img/BRL.png');
-}
-
 h1 {
     width: fit-content;
     font-size: 20px;
     background: linear-gradient(to left, #E70FAA, #00BEFB);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.display{
+    display: flex;
+    gap:10px;
 }
 
 .entry{
@@ -43,6 +40,12 @@ h1 {
     border-radius: 5px;
 }
 
+.convert{
+    background-color: #24AF5B;
+    padding: 0px;
+    width: 25px;
+    height: 20px;
+}
 
 
 .result{
