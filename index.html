@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Conversor</title>
-        
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="module" src="./js/chart.js"></script>
-    
+</head>
 <body>
     <header>
         <h1>Conversor</h1>
     </header>
     <div class="container">
-
+        <div class="display">
         <div class="entry">
             <input type="text" class="in">
             <select id="from" >
@@ -27,10 +24,10 @@
             </select>
         </div>
         <div class="converter">
-            <img class="imgSetas" src="./img/setas.png" width="25">
+            <button class="convert">&rarr;</button>
         </div>
-        <div class="result">
-            <input type="text" class="for">
+        <div class="result" >
+            <input type="text" class="for" >
             <select id="to">
                 <option value="BRL">BRL</option>
                 <option value="USD">USD</option>
@@ -38,13 +35,13 @@
                 <option value="GBP">GBP</option>
             </select>
         </div>
+        </div>
         <div><canvas style="width: 500px;" id="variationCoin"></canvas></div>
     </div>
+    <footer>
+        <div class="waterMark">
+            <h2 class="github">&lt;/HMenezes99&GT</h2>
+        </div>
+    </footer>
 </body>
-<footer>
-    <div class="waterMark">
-        <h2 class="github">&lt;/HMenezes99&GT</h2>
-    </div>
-</footer>
-
 </html>

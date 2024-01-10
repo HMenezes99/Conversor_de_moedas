@@ -1,9 +1,9 @@
 
 const data = {
-    labels: [1, 2, 3, 4, 5, 6],
+    labels: [1, 5, 15, 30],
     datasets: [{
         label: 'Variação',
-        data: [65, 13, 12, 40, 99],
+        data: [5.3, 5.2, 5.1, 5.0],
         fill: false,
         borderColor: '#535154',
         tension: 0.1,
